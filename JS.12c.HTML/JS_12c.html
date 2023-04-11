@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejemplo JS.</title>
+<script>
+</script>
+</head>
+<body>
+    <h1>Ejemplo de Javascript</h1>
+<script>
+var nombre, pregunta, pregunta2;
+numero = prompt("Teclea un número: ","3");
+pregunta=confirm("¿El número es impar");
+if(pregunta == true){
+    pregunta2=confirm("¿Es divisible por 3, 5 o 7?");
+    if(pregunta2 == true){
+        document.write("Es un número impar divisible por 3, 5 ó 7");
+    }
+    else{
+        document.write("Es un número impar no divisible por 3, 5 ó 7");
+    }
+}
+else
+{document.write("El número es par");
+}
+
+</script>
+</body>
+</html>
+

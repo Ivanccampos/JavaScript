@@ -1,0 +1,1 @@
+alert("Mensaje insertado en el archivo externo");

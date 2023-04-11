@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Acoplamiento de Javascript</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Francesc Ricart">
+    <!--1. Acoplamiento en el head-->
+    <script type="text/javascript">
+        window.alert("Script en la cabecera");
+    </script>
+</head>
+</body>
+    <!--2. Acoplamiento en el body-->
+    <script type="text/javascript">
+        var almacen = "textoAlmacenado";
+        /* 3. Salida por la consola del navegador */
+        console.log(almacen);
+    </script>
+    <!--4. En una hoja externa-->
+    <script src="ejemplo2.js"></script>
+    <!--5. Como atributo de una etiqueta html-->
+    <button onclick="window.alert('hola')">Ventana emergente</button>
+</html>
