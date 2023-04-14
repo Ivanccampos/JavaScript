@@ -9,20 +9,25 @@
 <body>
     <h1>Ejemplo de Javascript</h1>
 <script>
-var nombre, pregunta, pregunta2;
-numero = prompt("Teclea un número: ","3");
-pregunta=confirm("¿El número es impar");
-if(pregunta == true){
-    pregunta2=confirm("¿Es divisible por 3, 5 o 7?");
-    if(pregunta2 == true){
-        document.write("Es un número impar divisible por 3, 5 ó 7");
+num = prompt("Introduce un número")
+resto = num%2
+if (resto == 0){
+    document.write("el número es par")
+}
+else{
+    document.write("el número es impar <br />")
+    if(num%3 == 0){
+        document.write("el número es divisible por 3 <br />")
+    }
+    else if(num%5 == 0){
+        document.write("el número es divisible por 5 <br />")
+    }
+    else if(num%7 == 0){
+        document.write("el número es divisible por 7 <br />")
     }
     else{
-        document.write("Es un número impar no divisible por 3, 5 ó 7");
+        document.write("el número no es divisible por 3, 5 o 7 <br />")
     }
-}
-else
-{document.write("El número es par");
 }
 
 </script>
