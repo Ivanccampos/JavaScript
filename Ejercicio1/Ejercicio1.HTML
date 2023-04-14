@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejemplo JS.</title>
+<script>
+</script>
+</head>
+<body>
+    <h1>Ejemplo de Javascript.</h1>
+<script>
+forma = prompt("¿Quieres calular el area de un cuadrado, un rectángulo o un círculo?"," ");
+if(forma == "cuadrado"){
+    lado = prompt("Dame el valor del lado del cuadrado","");
+     if(parseFloat(lado)){
+        perc = lado*4
+        areac =lado*lado
+        document.write("El perímertro del cuadrado es "+perc+"<br />");
+        document.write("El área del cuadrado es "+areac);
+}
+else{
+   document.write("Alguno de los valores tecleados no es un número"); 
+}
+}
+else if (forma == "rectángulo") {
+    lado = prompt("Dame el valor de un lado del rectangulo","");
+    lado2 = prompt("Dame el valor del otro lado del rectangulo","");
+     if(parseFloat(lado)){
+        if(parseFloat(lado2)){
+        perc = lado*2+lado2*2
+        areac =lado*lado2
+        document.write("El perímertro del rectángulo es "+perc+"<br />");
+        document.write("El área del rectángulo es "+areac);
+}
+else{
+   document.write("Alguno de los valores tecleados no es un número"); 
+}}
+else{
+   document.write("Alguno de los valores tecleados no es un número"); 
+}
+}
+else if(forma == "círculo"){
+    radio = prompt("Dame el valor del radio del círculo","");
+     if(parseFloat(radio)){
+        perc = 2*Math.PI*radio
+        areac =Math.PI*radio*radio
+        document.write("El perímertro del círculo es "+perc+"<br />");
+        document.write("El área del círculo es "+areac);
+}
+else{
+   document.write("Alguno de los valores tecleados no es un número"); 
+}
+}
+else{
+    document.write("Has escrito mal la forma o has puesto una incompatible, prueba de nuevo")
+}
+</script>
+</body>
+</html>
