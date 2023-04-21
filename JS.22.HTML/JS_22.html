@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejemplo JS.</title>
+<script>
+</script>
+</head>
+<body>
+    <h1>Ejemplo de Javascript</h1>
+<script>
+var name = prompt("Introduce una frase.");
+var ini = prompt("Introduce un valor de posición incial.");
+var fin = prompt("Introduce un valor de posición final.");
+
+if((parseFloat(ini))&&(parseFloat(fin))){
+var resulatado= name.slice(ini, fin);
+document.write(resulatado)
+}
+else{
+    document.write("Los valores posicionales deben ser números");
+}
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejemplo JS.</title>
+<script>
+</script>   
+</head>
+<body>
+    <h1>Ejemplo de Javascript</h1>
+<script>
+    var num1=prompt("Introduce un número")
+    var num2=prompt("Introduce otro número")
+
+
+if (num1 > num2){
+    document.write("Escribimos los valores comprendidos entre "+num2+" y "+num1+"<br />")
+    let cont;
+    for(cont = num2; cont <= num1; cont++) {
+
+    document.write(cont+"<br />");
+}
+}
+else{
+    document.write("Escribimos los valores comprendidos entre "+num1+" y "+num2+"<br />")
+    let cont;
+    for(cont = num1; cont <= num2; cont++) {
+    document.write(cont+"<br />");
+}
+}
+
+
+</script>
+</body>
+</html>
+

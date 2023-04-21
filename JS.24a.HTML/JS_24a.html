@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Ejemplo JS.</title>
+<script>
+</script>
+</head>
+<body>
+    <h1>Ejemplo de Javascript</h1>
+<script>
+var name = prompt("Introduce un número y te mostraré cuántos días tiene ese mes.");
+var año = prompt("Introduce el año que quieras buscar")
+if(name == (1) ||name == (3) ||name == (5) ||name == (7) ||name == (8) ||name == (10) ||name == (12)){
+document.write("El mes tecleado tiene 31 días")
+}
+else if(name == 2){
+var resto = año%4
+    if (resto == 0){
+        document.write("El mes tecleado tiene 29 días")
+    }
+    else{
+        document.write("El mes tecleado tiene 28 días") 
+    }
+}
+else if(name == (4) ||name == (6) ||name == (9) ||name == (11)){
+document.write("El mes tecleado tiene 30 días")
+}
+
+else{
+    document.write("Ese número no corresponde a ningún mes");
+}
+
+</script>
+</body>
+</html>
+
