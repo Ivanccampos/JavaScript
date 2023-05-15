@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+
+    
+<p>El Monopoly es un juego que nació como critica al <a href="http://aeth">capitalismo</a>. Este juego, además de<br>
+     cargarse toda la dinámica del mismo, también destroza esta idea. Es una ensalzación de los <br>
+     ricos y una frivolización del capitalismo. <a href="http://prueba">El juego no te permite</a> avanzar si no robas o rompes <br>
+     el progreso de otros usuarios. Fomenta y normaliza eso. Además de que mucho contenido es <br>
+     de pago (sin pagar se queda en nada y <a href="http://ahetath">acabas de jugar en seguida</a>) y los gráficos son malos y <br>
+     se cuelgan. Si sales de la app se cierra</p>
+<p>Hoy he tenido <a href="http://htaehea">un día de mierda</a>, me ha cagado una paloma, me he caido en <a href="http://prueba">un charco y toda</a> mi familia ha sufrido un <br>
+    infarto... y aquí estoy en el bar en frente de urgencias, en la última mesa delante de un plato de sopa y un tercio de <br>
+    1906 viendo este trailer gracias a Illojuan. Muchas gracias a <a href="http://haetheae">Illojuan</a> por hacer que este día de mierda se convierta en <br>
+    el mejor día de mi vida. <a href="http://hteatha">Gracias a conocer que se va</a> a lanzar esta película ahora mi vida cobra sentido y tengo una <br>
+    meta en la vida....</p>
+<p>El Monopoly es un juego que nació como critica al <a href="http://haethaeh">capitalismo</a>. Este juego, además de<br>
+    cargarse toda la dinámica del mismo, también destroza esta idea. Es una ensalzación de los <br>
+    ricos y una frivolización del capitalismo. <a href="http://haetha">El juego no te permite</a> avanzar si no robas o rompes <br>
+    el progreso de otros usuarios. Fomenta y normaliza eso. Además de que mucho contenido es <br>
+    de pago (sin pagar se queda en nada y <a href="http://haetha">acabas de jugar en seguida</a>) y los gráficos son malos y <br>
+    se cuelgan. Si sales de la app se cierra</p>
+
+
+    
+    <script>
+window.onload = function (){
+var contEnlaces = document.querySelectorAll('a');
+alert("Hay un total de "+contEnlaces.length+" enlaces");
+
+var penEnlace = document.getElementsByTagName('a');
+alert("Dirección del penúltimo enlace: "+penEnlace[penEnlace.length-2]);
+
+var cont = 0;
+for (var i=0; i< contEnlaces.length;i++){
+    if(contEnlaces[i].href=="http://prueba/"){
+    cont++;
+}
+}
+alert(cont+" enlaces apuntan a http://prueba");
+
+
+var parrafos = document.querySelectorAll('p');
+var tercerParrafo =parrafos[2];
+var contador =tercerParrafo.getElementsByTagName('a')
+alert("Número de enlaces del tercer párrafo: "+contador.length);
+}
+    </script>
+</body>
+</html>
+

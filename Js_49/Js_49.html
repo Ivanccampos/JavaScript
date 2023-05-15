@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <p>Acceso a los campos de un formulario. Usamos una función para mostrar un mesaje con el valor del campo nombre al hacer clic sobre el botón mostrar nombre en la página web</p><br><br>
+        Nombre:<input type="text" id="Nombre"/>
+        Curso:<input type="text" id="Curso"/>
+        Centro:<input type="text" id="Centro"/>
+        <button2 onclick="mostrar()">Rellenar datos</button><br><br><br>
+        <button onclick="mostrarsubmit()">Mostrar nombre</button>
+    
+    <script>
+document.getElementById("submit").onclick = mostrarsubmit;
+
+function mostrarsubmit(){
+var x = document.getElementById("Nombre").value;
+alert(x)
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+    <p>Usar el método getElementById para acceder a una caja y cambiar su contenido,
+        en este caso añadiendo una imagen. Usamos el método onclick sobre un botón</p><br><br>
+    <p id="demo">contenido inicial de la caja</p>
+    <button onmouseover="mostrarsubmit()">Imagen1</button>
+    <button onmouseover="mostrarsubmit2()">Imagen2</button>
+    
+    <script>  
+  function mostrarsubmit(){  
+    var x = document.createElement("img");
+    document.getElementById("demo").innerHTML = '<img src= seagull.png >'
+}
+
+function mostrarsubmit2(){  
+    document.getElementById("demo").innerHTML = '<img src= sunflower.jpg >'
+}    
+
+
+
+    </script>
+</body>
+</html>

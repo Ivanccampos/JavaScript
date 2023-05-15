@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+</head>
+<body>
+        Nombre:<input type="text" id="Nombre"/>
+        Apellido:<input type="text" id="Apellido"/>
+        <button onclick="mostrarsubmit()">Rellenar datos</button>
+        <p id="demo"></p>
+    
+    <script>
+document.getElementById("submit").onclick = mostrarsubmit;
+
+function mostrarsubmit(){
+    var x = document.getElementById("Nombre").value;
+    var y = document.getElementById("Apellido").value;
+    var z =("Hola "+x+" "+y+", gracias por rellenar el formulario." )
+    document.getElementById("demo").innerHTML = z;
+}
+    </script>
+</body>
+</html>
